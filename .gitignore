@@ -22,3 +22,6 @@ Thumbs.db
 
 # Local temp / scan files
 _scan.txt
+
+# Build logs
+*.log
