@@ -1,0 +1,24 @@
+# IDE / editor
+.idea/
+.codebuddy/
+*.iml
+*.ipr
+*.iws
+
+# Build output
+target/
+build/
+out/
+node_modules/
+dist/
+bin/
+
+# Logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local temp / scan files
+_scan.txt

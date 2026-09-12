@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stock.monitor.mapper.MarketDailyDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.stock.monitor.entity.MarketDailyData">
+        <id column="id" property="id"/>
+        <result column="trade_date" property="tradeDate"/>
+        <result column="sh_index" property="shIndex"/>
+        <result column="sh_index_change" property="shIndexChange"/>
+        <result column="total_volume" property="totalVolume"/>
+        <result column="total_turnover" property="totalTurnover"/>
+        <result column="north_flow" property="northFlow"/>
+        <result column="rise_count" property="riseCount"/>
+        <result column="fall_count" property="fallCount"/>
+        <result column="limit_down_count" property="limitDownCount"/>
+        <result column="margin_balance" property="marginBalance"/>
+        <result column="margin_balance_change" property="marginBalanceChange"/>
+        <result column="etf_net_subscription" property="etfNetSubscription"/>
+        <result column="usd_index" property="usdIndex"/>
+        <result column="us_bond_yield" property="usBondYield"/>
+        <result column="sox_index" property="soxIndex"/>
+        <result column="sox_index_change" property="soxIndexChange"/>
+        <result column="global_market_status" property="globalMarketStatus"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+</mapper>

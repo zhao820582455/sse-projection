@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stock.monitor.mapper.TopWarningRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.stock.monitor.entity.TopWarningRecord">
+        <id column="id" property="id"/>
+        <result column="trade_date" property="tradeDate"/>
+        <result column="warning_code" property="warningCode"/>
+        <result column="warning_name" property="warningName"/>
+        <result column="warning_level" property="warningLevel"/>
+        <result column="target_name" property="targetName"/>
+        <result column="is_triggered" property="isTriggered"/>
+        <result column="trigger_basis" property="triggerBasis"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+</mapper>
