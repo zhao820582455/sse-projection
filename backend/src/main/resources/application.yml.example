@@ -1,0 +1,30 @@
+# ============================================================
+# 示例配置文件（application.yml.example）
+# 复制为 application.yml 后填入你自己的数据库连接信息。
+# 请勿将真实的 application.yml 提交到仓库。
+# ============================================================
+
+server:
+  port: 8080
+
+spring:
+  # ---- 数据源（Druid + MySQL） ----
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://<db-host>:3306/stock_monitor?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai&useSSL=false
+    username: <db-user>
+    password: <db-password>
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      test-while-idle: true
+
+  # ---- MyBatis-Plus ----
+  mybatis-plus:
+    mapper-locations: classpath*:/mapper/**/*.xml
+    configuration:
+      map-underscore-to-camel-case: true
+
+# 应用自定义配置（信号阈值、预警开关等）在此追加

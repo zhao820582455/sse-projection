@@ -25,3 +25,8 @@ _scan.txt
 
 # Build logs
 *.log
+
+# ===== Secrets: keep real config OUT of the repo =====
+# 真实数据库连接/密码等配置放在本地，勿提交
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-*.yml
